@@ -47,7 +47,7 @@ jobs:
           ARM64_SHA="${{ steps.checksums.outputs.arm64_sha256 }}"
 
           sed -i '' "s/version \".*\"/version \"$VERSION\"/" Casks/global-hotkey.rb
-          sed -i '' "s/arm:   \".*\"/arm:   \"$ARM64_SHA\"/" Casks/global-hotkey.rb
+          sed -i '' "s/arm: \".*\"/arm: \"$ARM64_SHA\"/" Casks/global-hotkey.rb
 
       - name: Create Pull Request
         id: create-pr
