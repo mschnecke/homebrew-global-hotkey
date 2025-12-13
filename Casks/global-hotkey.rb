@@ -1,0 +1,33 @@
+cask "global-hotkey" do
+  version "1.0.1"
+  sha256 arm: "edf55fd956dedaf3123718452e1b0aceed975b27675777b0c32303c18e710f72"
+
+  url "https://github.com/mschnecke/global-hotkey/releases/download/v#{version}/Global.Hotkey_#{version}_aarch64.pkg"
+
+  name "Global Hotkey"
+  desc "System-wide keyboard shortcuts that work from any application"
+  homepage "https://github.com/mschnecke/global-hotkey"
+
+  pkg "Global.Hotkey_#{version}_aarch64.pkg"
+
+  uninstall pkgutil: "net.pisum.global-hotkey",
+            delete: "/Applications/GlobalHotkey.app"
+
+  zap trash: [
+    "~/Library/Application Support/net.pisum.global-hotkey",
+    "~/Library/Caches/net.pisum.global-hotkey",
+    "~/Library/Preferences/net.pisum.global-hotkey.plist",
+    "~/Library/Saved Application State/net.pisum.global-hotkey.savedState",
+    "~/.global-hotkey.json",
+  ]
+
+  caveats <<~EOS
+    Global Hotkey requires Accessibility permissions to register system-wide hotkeys.
+
+    To grant permissions:
+    1. Open System Settings > Privacy & Security > Accessibility
+    2. Enable Global Hotkey in the list
+
+    Settings are stored in: ~/.global-hotkey.json
+  EOS
+end
