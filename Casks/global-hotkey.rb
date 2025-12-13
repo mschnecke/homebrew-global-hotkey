@@ -1,5 +1,5 @@
 cask "global-hotkey" do
-  version "1.0.1"
+  version "1.0.5"
   sha256 arm: "edf55fd956dedaf3123718452e1b0aceed975b27675777b0c32303c18e710f72"
 
   url "https://github.com/mschnecke/global-hotkey/releases/download/v#{version}/GlobalHotkey_#{version}_aarch64.pkg"
