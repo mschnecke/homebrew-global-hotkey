@@ -54,10 +54,10 @@ jobs:
         uses: peter-evans/create-pull-request@v5
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          commit-message: "Update Global Hotkey cask to v${{ steps.version.outputs.version }}"
-          title: "Update Global Hotkey to v${{ steps.version.outputs.version }}"
+          commit-message: "Update GlobalHotkey cask to v${{ steps.version.outputs.version }}"
+          title: "Update GlobalHotkey to v${{ steps.version.outputs.version }}"
           body: |
-            Automated cask update for Global Hotkey v${{ steps.version.outputs.version }}
+            Automated cask update for GlobalHotkey v${{ steps.version.outputs.version }}
 
             **Package checksums:**
             - ARM64 (.pkg): `${{ steps.checksums.outputs.arm64_sha256 }}`
