@@ -1,14 +1,14 @@
 cask "global-hotkey" do
-  version "1.0.1"
-  sha256 arm: "edf55fd956dedaf3123718452e1b0aceed975b27675777b0c32303c18e710f72"
+  version "1.0.6"
+  sha256 arm: "58bda63fbbe42d001bb5ca9a243db99e7677f163c0d61e26774c26bd5b9faf8d"
 
-  url "https://github.com/mschnecke/global-hotkey/releases/download/v#{version}/Global.Hotkey_#{version}_aarch64.pkg"
+  url "https://github.com/mschnecke/global-hotkey/releases/download/v#{version}/GlobalHotkey_#{version}_aarch64.pkg"
 
   name "Global Hotkey"
   desc "System-wide keyboard shortcuts that work from any application"
   homepage "https://github.com/mschnecke/global-hotkey"
 
-  pkg "Global.Hotkey_#{version}_aarch64.pkg"
+  pkg "GlobalHotkey_#{version}_aarch64.pkg"
 
   uninstall pkgutil: "net.pisum.global-hotkey",
             delete: "/Applications/GlobalHotkey.app"
