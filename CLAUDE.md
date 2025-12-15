@@ -24,7 +24,7 @@ brew audit --cask --strict Casks/global-hotkey.rb
 brew uninstall --cask global-hotkey
 
 # Calculate SHA256 for a new release
-curl -L -o arm64.pkg "https://github.com/mschnecke/global-hotkey/releases/download/v<VERSION>/Global.Hotkey_<VERSION>_aarch64.pkg"
+curl -L -o arm64.pkg "https://github.com/mschnecke/global-hotkey/releases/download/v<VERSION>/GlobalHotkey_<VERSION>_aarch64.pkg"
 shasum -a 256 arm64.pkg
 ```
 
