@@ -1,6 +1,6 @@
 cask "global-hotkey" do
-  version "1.0.9"
-  sha256 arm: "bb37725bf924eee798bc7f25218a825ff7b5ad0bac6a308e118f7cc77a7f9713"
+  version "1.0.10"
+  sha256 arm: "705789f8908adcd6d095cddc48c910d5fba05701314686bdac97ea7ad9a015cb"
   url "https://github.com/mschnecke/global-hotkey/releases/download/v#{version}/GlobalHotkey_#{version}_aarch64.pkg"
 
   name "GlobalHotkey"
